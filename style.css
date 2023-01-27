@@ -26,6 +26,7 @@ html:root {
 .swiper-container {
     position: relative;
     padding-bottom: 82px;
+    padding-top: 24px;
 }
 .swiper-pagination {
     bottom: 30px !important;
@@ -184,6 +185,7 @@ html:root {
         position: static;
         width: 256px !important;
         padding: 0;
+        padding-top: 16px;
     }
     .services__more {
         display: none;
