@@ -20,6 +20,9 @@ body {
 * {
     box-sizing: border-box;
 }
+html:root {
+    --swiper-theme-color: #7d7e83;
+}
 .swiper-container {
     position: relative;
     padding-bottom: 82px;
