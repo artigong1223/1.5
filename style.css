@@ -23,7 +23,7 @@ body {
 html:root {
     --swiper-theme-color: #7d7e83;
 }
-.swiper-container {
+.service__сontainer {
     position: relative;
     padding-bottom: 82px;
     padding-top: 24px;
@@ -55,10 +55,10 @@ html:root {
     text-transform: uppercase;
     background-image: linear-gradient(90deg,#F8F8F8 30%, #FFFFFF 100%);
 }
-.swiper-slide > div:first-child {
+.service__slide > div:first-child {
     margin-left: 16px;
 }
-.swiper-slide > div:last-child {
+.service__slide > div:last-child {
     margin-right: 16px;
 }
 .ic {
@@ -108,21 +108,18 @@ html:root {
     width: 128px;
     height: 25.6px;
 }
-.swiper-wrapper {
+.service__swiper {
     display: flex;
     flex-wrap: wrap;
     height: 160px !important;
     overflow: hidden;
 }
-.swiper-wrapper1 {
+.service__swiper_overflow {
     height: 100% !important;
     overflow: visible;
 }
-.arr1 {
-    transform: rotate(180deg)
-}
 
-.swiper-slide {
+.service__slide {
     margin-left: 32px;
     margin-bottom: 16px;
     width: 240px !important;
@@ -145,19 +142,31 @@ html:root {
     cursor: pointer;
     margin-bottom: 34px;
     z-index: 100;
+    border: none;
+    background-color: inherit;
 }
-.more-title {
+#arr {
+    padding-left: 20px;
     font-family: TTLakes;
     font-weight: 500;
-    font-style: 16px;
+    font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
     margin-left: 8px;
+    position: relative;
+    white-space: nowrap;
 }
-.arr {
+#arr:before {
+    top: 0;
+    left: -10px;
+    position: absolute;
+    content: "";
     width: 24px;
     height: 24px;
     background-image: url(./img/brands/arr.svg);
+}
+#arr.more-title:before {
+    transform: rotate(180deg)
 }
 @media (max-width: 767px) {
     .services__title {
@@ -170,18 +179,18 @@ html:root {
         position: relative;
         overflow: hidden;
     }
-    .swiper-wrapper {
+    .service__swiper {
         padding-bottom: 66px;
         height: 100% !important;
         margin-left: 16px;
         flex-wrap: nowrap;
         overflow: visible;
     }
-    .swiper-slide {
+    .service__slide {
         margin: 0;
         margin-right: 16px;
     }
-    .swiper-container {
+    .service__сontainer {
         position: static;
         width: 256px !important;
         padding: 0;
@@ -192,7 +201,7 @@ html:root {
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
-    .swiper-slide {
+    .service__slide {
         width: 224px !important;
         margin-left: 16px;
     }
