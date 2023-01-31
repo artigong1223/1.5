@@ -11,14 +11,14 @@ new Swiper('.image-slider', {
                     }
                 }
                 });
-const swiperWrapper = document.querySelector('.swiper-wrapper')
-const moreTitle = document.querySelector('.more-title')
+const swiperWrapper = document.querySelector('.service__swiper')
+const arrow = document.getElementById('arr')
 document.querySelector('.services__more').addEventListener('click', () => {
-    swiperWrapper.classList.toggle('swiper-wrapper1')
-    document.querySelector('.arr').classList.toggle('arr1')
-    if (swiperWrapper.classList.contains('swiper-wrapper1')) {
-        moreTitle.innerHTML = 'Скрыть'
+    swiperWrapper.classList.toggle('service__swiper_overflow')
+    arrow.classList.toggle('more-title')
+    if (arrow.classList.contains('more-title')) {
+        arrow.textContent = "Скрыть"
     } else {
-        moreTitle.innerHTML = 'Показать все'
+        arrow.textContent = "Показать все"
     }
 })
